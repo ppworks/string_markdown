@@ -2,11 +2,11 @@
 require File.expand_path('../lib/string_markdown/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["koshikawa"]
+  gem.authors       = ["ppworks"]
   gem.email         = ["koshikawa@ppworks.jp"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Add String#to_md support}
+  gem.summary       = %q{Add String#to_md}
+  gem.homepage      = "https://github.com/ppworks/string-markdown"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -14,4 +14,8 @@ Gem::Specification.new do |gem|
   gem.name          = "string_markdown"
   gem.require_paths = ["lib"]
   gem.version       = StringMarkdown::VERSION
+  
+  gem.add_dependency 'redcarpet'
+  gem.add_dependency 'pygments.rb'
+  gem.add_dependency 'rubypython', '0.5.1'
 end
