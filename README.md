@@ -1,6 +1,6 @@
 # StringMarkdown
 
-TODO: Write a gem description
+Add Strning#to_md
 
 ## Installation
 
@@ -18,7 +18,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+text = <<MARKDOWN
+# level1 header
+## level2 header
+```
+block code
+```
+
+* list
+* list
+
+http://example.com
+MARKDOWN
+
+text.to_md
+```
+
+```
+<h1>level1 header</h1>\n\n<h2>level2 header</h2>\n<div class=\"highlight\"><pre><span class=\"n\">block</span> <span class=\"n\">code</span>\n</pre>\n</div>\n\n<ul>\n<li>list</li>\n<li>list</li>\n</ul>\n\n<p><a href=\"http://example.com\">http://example.com</a></p>\n
+```
 
 ## Contributing
 
