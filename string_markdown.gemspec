@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["koshikawa@ppworks.jp"]
   gem.description   = %q{Add String#to_md support}
   gem.summary       = %q{Add String#to_md}
-  gem.homepage      = "https://github.com/ppworks/string-markdown"
+  gem.homepage      = "https://github.com/ppworks/string_markdown"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
