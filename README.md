@@ -22,10 +22,6 @@ Or install it yourself as:
 text = <<MARKDOWN
 # level1 header
 ## level2 header
-```
-block code
-```
-
 * list
 * list
 
@@ -36,7 +32,7 @@ text.to_md
 ```
 
 ```
-<h1>level1 header</h1>\n\n<h2>level2 header</h2>\n<div class=\"highlight\"><pre><span class=\"n\">block</span> <span class=\"n\">code</span>\n</pre>\n</div>\n\n<ul>\n<li>list</li>\n<li>list</li>\n</ul>\n\n<p><a href=\"http://example.com\">http://example.com</a></p>\n
+<h1>level1 header</h1>\n\n<h2>level2 header</h2>\n</div>\n\n<ul>\n<li>list</li>\n<li>list</li>\n</ul>\n\n<p><a href=\"http://example.com\">http://example.com</a></p>\n
 ```
 
 ## Contributing
